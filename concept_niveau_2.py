@@ -41,3 +41,53 @@ contact = {
 # pour une liste.
 
 contact["prenom"]
+
+## ████████████████ 
+## CLASSES & OBJETS
+## ████████████████ 
+
+# -- 📕 Définition
+# Un objet :
+# Est une variable composée de propriétés (variables) et de méthodes
+# (fonctions).
+
+# -- 📕 Définition
+# Une classe :
+# Définit la structure d'un object
+
+# En d'autres termes une classe définit un concept général tandis
+# qu'un objet représente une instance particulière de ce concept.
+
+
+# Définition d'une classe voiture
+class Voiture:
+    def __init__(self, marque, couleur):
+        self.marque = marque
+        self.couleur = couleur
+
+    def demarrer(self):
+        print(f"La {self.marque} démarre.")
+
+    def afficher_info(self):
+        print(f"Voiture: {self.marque}, Couleur: {self.couleur}")
+
+
+# Création d'objets (instances de la classe)
+voiture1 = Voiture("Toyota", "rouge")
+voiture2 = Voiture("BMW", "noire")
+
+# Utilisation des objets
+voiture1.afficher_info()
+voiture1.demarrer()
+voiture2.afficher_info()
+
+# -- 🤔 Remarque:
+# En python, tout est une classe.
+# Y compris, str, list, int etc.
+
+notes = [14, 15, 8]
+notes.append(12)
+notes.pop(0)
+
+firstname = "julien"
+print(firstname.upper())
