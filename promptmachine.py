@@ -1,6 +1,8 @@
 # promptmachine.py python "calculer une moyenne"
 import sys
 
+print(sys.argv)
+
 if len(sys.argv) != 3:
     print("usage: promptmachine.py python 'calculer une moyenne'")
     exit(1)
